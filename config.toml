@@ -7,7 +7,7 @@ name = "Contact"
 weight = 3
 [[menu.footer]]
 URL = "#portfolio"
-name = "Portfolio"
+name = "Pricing"
 weight = 2
 [[menu.footer]]
 URL = "#about"
