@@ -19,7 +19,7 @@ name = "Contact"
 weight = 3
 [[menu.header]]
 URL = "#portfolio"
-name = "Portfolio"
+name = "Pricing"
 weight = 2
 [[menu.header]]
 URL = "#about"
