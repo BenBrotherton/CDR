@@ -3,7 +3,7 @@
     <div class="container">
         <div class="contact">
             <h2>{{ .Site.Data.homepage.contact.title }}</h2>
-            <div class="row pt-2">
+            <div class="row">
                         <form name="book-in" class="" method="post" netlify>
                             <div class="row">
                             <div class="col-6">
@@ -11,11 +11,11 @@
                                 <div class="col-3"><input placeholder="First Name" id="first_name" type="text" class="form-control" required></div>
                                 <div class="col-3"><input placeholder="Surname" id="surname" type="text" class="form-control" required></div>
                             </div>
-                            </div>
+                            
                             <div class="form-row">
-                            <div class="col-6">
+                            
                                 <textarea placeholder="Address" id="customer_address" type="textarea" class="form-control" required maxlength="260"></textarea>
-                            </div>
+                            
                             </div>
                             <div class="form-row">
                                 <div class="col-3"><input placeholder="Phone Number" id="phone_number" type="tel" class="form-control" required></div>
@@ -23,21 +23,21 @@
 
                             </div>
                         </div>
-                        
-                        <div class="col-4">
+                    
+                        <div class="col-6">
                             <div class="form-row">
-                                <div class="col-4">
+                                
                                 <h3 class="text-center"> Your Device </h3>
-                                </div>
+                                
                             </div>
                             <div class="form-row">
-                                <div class="col-4"><input placeholder="Device Make" id="device_make" type="text" class="form-control" required></div>
-                                <div class="col-4"><input placeholder="Device Model" id="device_model" type="text" class="form-control" required></div>
+                                <div class="col-3"><input placeholder="Device Make" id="device_make" type="text" class="form-control" required></div>
+                                <div class="col-3"><input placeholder="Device Model" id="device_model" type="text" class="form-control" required></div>
 
                             </div>
                 
-                            <div class="form-row">
-                                <div class="col-4">
+                            <div class="col-6">
+                                <div class="form-row">
                                     <Select placeholder="Device Type" id="device_type" class="form-control" size="1" required>
                                         <option value="null" selected disabled hidden>Please Select A Device Type</option>
                                         <option value="Battery">Battery Powered Drill</option>
@@ -50,7 +50,9 @@
                                         
                                     </Select>
                                 </div>
-                                <div class="col-4">
+                            </div>
+                            
+                                <div class="form-row">
                                     <Select placeholder="Service Required" id="service_req" class="form-control" size="1" required>
                                         <option value="" selected disabled hidden>Select an option</option>
                                         <option value="Service">Service</option>
@@ -60,9 +62,9 @@
                             </div>
                             <div class="form-row">
 
-                                <div class="col-4">
+                                
                                     <textarea placeholder="Fault description or comments" id="fault" type="textarea" class="form-control" maxlength="260" required></textarea>
-                                </div>
+                                
                             </div>
                             <div class="form-row">
                               <div class="col-4">Preferred return date:
@@ -71,10 +73,12 @@
                 
                               </button>
                               </div>
-                              <div class="col-4"><input placeholder="Preferred Return Date" id="returndate" type="date" class="form-control"></div>
+                              <div class="col-2"><input placeholder="Preferred Return Date" id="returndate" type="date" class="form-control"></div>
                             </div>
-                            <div class="col-4">Preapproved cost:</div>
+                            
                             <div class="form-row">
+                            <div class="col-3">Preapproved cost:</div>
+                           
                                 <div class="col-1">
                                 <div class="custom-control custom-radio custom-control-inline">
                                     <input type="checkbox" id="40below" name="customRadioInline1" class="custom-control-input">
@@ -126,7 +130,7 @@
                                 </button>
                             </div>
                         </div>-->
-                    </div>
+                    
                     </form>
                 </div>
                 <div class="col-12 contact__info">
