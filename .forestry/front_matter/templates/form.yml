@@ -1,4 +1,100 @@
 ---
 label: Form
 hide_body: true
-fields: []
+fields:
+- name: first_name
+  type: text
+  config:
+    required: true
+  label: First Name
+- name: surname
+  type: text
+  config:
+    required: false
+  label: Surname
+- name: address
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Address
+- name: phone_number
+  type: text
+  config:
+    required: false
+  label: Phone Number
+- name: email_address
+  type: text
+  config:
+    required: true
+  label: Email Address
+- name: device_make
+  type: text
+  config:
+    required: false
+  label: Device Make
+  description: 'Common makes include: Hadewe, Saeyang, Berchtold, Unitronic, Kupa'
+- name: device_model
+  type: text
+  config:
+    required: false
+  label: Device Model
+  description: Can usually be found on a sticker on the rear of the device
+- name: device_type
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Battery Powered
+    - Mains Powered Drill
+    - Handpiece Only
+    - Other
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Device Type
+- name: service
+  type: boolean
+  label: Service
+  description: Would you like this device serviced?
+- name: repair
+  type: boolean
+  label: Repair
+  description: Does this device require repairs?
+- name: pat_test
+  type: boolean
+  label: PAT test required?
+- name: comments
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Fault description or comments
+  description: Please include a brief description of the fault, or the service you
+    require
+- name: preapproved_cost
+  type: select
+  default: ''
+  config:
+    required: false
+    options:
+    - "£150 or less"
+    - "£80 or less"
+    - "£40 or less"
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Preapproved Cost
+  description: 'Please select a value from the dropdown of a cost you would be happy
+    paying without need for prior quotation. '
