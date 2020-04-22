@@ -4,9 +4,113 @@
         <div class="contact">
             <h2>{{ .Site.Data.homepage.contact.title }}</h2>
             <div class="row pt-2">
-                <div class="col-12 col-lg-7">
-                    <form action="{{ .Site.Data.homepage.contact.form.action }}" netlify>
-                        <div class="row">
+                <div class="col-12">
+                        <form class="Book-in needs-validation" netlify>
+                            <div class="form-row">
+                                <div class="col-sm-12">
+                                <h3 class="text-center"> Contact Details </h3>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-sm-4"></div>
+                                <div class="col-sm-2"><input placeholder="First Name" id="first_name" type="text" class="form-control" required></div>
+                                <div class="col-sm-2"><input placeholder="Surname" id="surname" type="text" class="form-control" required></div>
+                                <div class="col-sm-4"></div> 
+                             </div>
+                            <div class="form-row">
+                                <div class="col-sm-4"></div>
+                                <div class="col-sm-4">
+                                    <textarea placeholder="Address" id="customer_address" type="textarea" class="form-control" required maxlength="260"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-sm-4"></div>
+                                <div class="col-sm-2"><input placeholder="Phone Number" id="phone_number" type="tel" class="form-control" required></div>
+                                <div class="col-sm-2 "><input placeholder="Email Address" id="email_address" type="email" class="form-control" required></div>
+                                <div class="col-sm-4"></div> 
+                            </div>
+                            <div class="form-row">
+                                <div class="col-sm-12">
+                                <h3 class="text-center"> Your Device </h3>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-sm-4"></div>
+                                <div class="col-sm-2"><input placeholder="Device Make" id="device_make" type="text" class="form-control" required></div>
+                                <div class="col-sm-2"><input placeholder="Device Model" id="device_model" type="text" class="form-control" required></div>
+                                <div class="col-sm-4"></div> 
+                            </div>
+                
+                            <div class="form-row">
+                                <div class="col-sm-4"></div>
+                                <div class="col-sm-2">
+                                    <Select placeholder="Device Type" id="device_type" class="form-control" size="1" required>
+                                        <option value="null" selected disabled hidden>Please Select A Device Type</option>
+                                        <option value="Battery">Battery Powered Drill</option>
+                                        <option value="Desk">Mains Powered Drill</option>
+                                        <option value="Handpiece">Handpiece Only</option>
+                                        <option value="Desk Lamp">Desk Lamp</option>
+                                        <option value="UV / LED Lamp">UV / LED Lamp</option>
+                                        <option value="Dust Collector">Dust Collector</option>
+                                        <option value="Other">Other</option>
+                                        
+                                    </Select>
+                                </div>
+                                <div class="col-sm-2">
+                                    <Select placeholder="Service Required" id="service_req" class="form-control" size="1" required>
+                                        <option value="" selected disabled hidden>Select an option</option>
+                                        <option value="Service">Service</option>
+                                        <option value="Repair">Repair</option>
+                                    </Select>
+                                </div>
+                                <div class="col-sm-4"></div> 
+                            </div>
+                            <div class="form-row">
+                                <div class="col-sm-4"></div>
+                                <div class="col-sm-4">
+                                    <textarea placeholder="Fault description or comments" id="fault" type="textarea" class="form-control" maxlength="260" required></textarea>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                              <div class="col-sm-4"></div>
+                              <div class="col-sm-2">Preferred return date:
+                
+                              <button type="button" class="btn-light btn-sm" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="top" style="text-transform: lowercase;" data-content="We can't guarantee your device will be back by this date, but we'll do our best">
+                                &#x1F6C8
+                              </button>
+                              </div>
+                              <div class="col-sm-2"><input placeholder="Preferred Return Date" id="returndate" type="date" class="form-control"></div>
+                              <div class="col-sm-4"></div> 
+                            </div>
+                            <div class="form-row">
+                                <div class="col-sm-4"></div>
+                                <div class="col-sm-1">Preapproved cost:</div>
+                                <div class="col-sm-1">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="checkbox" id="40below" name="customRadioInline1" class="custom-control-input">
+                                    <label class="custom-control-label" for="40below">£40 or less</label>
+                                </div>
+                                </div>
+                                <div class="col-sm-1">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="checkbox" id="80below" name="customRadioInline1" class="custom-control-input">
+                                    <label class="custom-control-label" for="80below">£80 or less</label>
+                                </div>
+                                </div>
+                                <div class="col-sm-1">
+                                <button type="button" class="btn-light btn-sm" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="top" style="text-transform: lowercase;" data-content="By providing a pre-approved amount, you're confirming that you are willing to pay the amount ticked, or less! This allows us to complete repairs as soon as they land with us. If our assessment shows that a repair will cost more than this pre-approved amount, we will then contact you and provide a quote before any work is carried out.">
+                                    Why pre-approve?
+                                </button></div>
+                            </div>
+                              <div class="form-row justify-content-md-center">
+                                <div class="row">
+                                <div class="col-md-auto">
+                                    <button class="btn btn-outline" type="submit">Print Your Label</button>  
+                                </div>
+                                </div>
+                            </div>
+                            
+                        <!--<div class="row">
                             <div class="col-12 col-sm-6">
                                 <input type="text" name="" id="full_name"
                                        placeholder="{{ .Site.Data.homepage.contact.form.full_name }}"/>
@@ -29,10 +133,10 @@
                                     {{ .Site.Data.homepage.contact.button.btnText }}
                                 </button>
                             </div>
-                        </div>
+                        </div>-->
                     </form>
                 </div>
-                <div class="col-12 col-lg-5 contact__info">
+                <div class="col-12 contact__info">
                     <h4>{{ .Site.Data.homepage.contact.phone.title }}</h4>
                     <span>{{ .Site.Data.homepage.contact.phone.number }}</span>
                     <h4>{{ .Site.Data.homepage.contact.email.title }}</h4>
