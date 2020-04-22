@@ -143,6 +143,7 @@ client_and_work:
   works:
     - title: "Micromotor Servicing"
       description: "Our Micromotor service includes replacement of wear and tear parts, including bearings and brushes. Handpieces and units are given a deep clean, removing the dust and debris which builds up over regular use."
+      price: "£30+V"
       button:
         icon: "icon-arrow-right"
         btnText: "Case Study"
@@ -154,6 +155,7 @@ client_and_work:
 
     - title: "Suction Drill Servicing"
       description: "Suction drills servicing includes a clean down of both handpiece and unit, removing any dust build up. Wear and tear parts such as brushes, filters and bearings are replaced to ensure all is in good working order."
+      price: £75+V
       button:
         icon: "icon-arrow-right"
         btnText: "Case Study"
@@ -165,6 +167,7 @@ client_and_work:
 
     - title: "Spray Drill Servicing"
       description: "Spray drills can suffer from build up of scale on the internal water systems. Our service includes full disassembly and cleaning of all pumps and pressure systems to ensure clean and consistent spray."
+      price: "£100+V"
       button:
         icon: "icon-arrow-right"
         btnText: "Case Study"
