@@ -5,8 +5,13 @@
             <h2>{{ .Site.Data.homepage.contact.title }}</h2>
             <div class="row">
                         <form name="book-in" class="" method="post" netlify>
-                            <div class="row">
+                        <div class="row">
                             <div class="col-6">
+                                <div class="form-row">
+                                
+                                    <h3 class="text-center"> Your Details</h3>
+                                    
+                                </div>
                             <div class="form-row">
                                 <div class="col-3"><input placeholder="First Name" id="first_name" type="text" class="form-control" required></div>
                                 <div class="col-3"><input placeholder="Surname" id="surname" type="text" class="form-control" required></div>
@@ -22,7 +27,7 @@
                                 <div class="col-6"><input placeholder="Email Address" id="email_address" type="email" class="form-control" required></div>
 
                             </div>
-                        </div>
+                            </div>
                     
                         <div class="col-6">
                             <div class="form-row">
@@ -72,21 +77,21 @@
                                 </div>
                             
                                 <div class="form-row">
-                                <div class="col-3">Preapproved cost:</div>
+                                <div class="col-4">Preapproved cost:</div>
                            
-                                <div class="col-1">
+                                <div class="col-2">
                                 <div class="custom-control custom-radio custom-control-inline">
                                     <input type="checkbox" id="40below" name="customRadioInline1" class="custom-control-input">
                                     <label class="custom-control-label" for="40below">£40 or less</label>
                                 </div>
                                 </div>
-                                <div class="col-1">
+                                <div class="col-2">
                                 <div class="custom-control custom-radio custom-control-inline">
                                     <input type="checkbox" id="80below" name="customRadioInline1" class="custom-control-input">
                                     <label class="custom-control-label" for="80below">£80 or less</label>
                                 </div>
                                 </div>
-                                <div class="col-1">
+                                <div class="col-2">
                                 <button type="button" class="btn-light btn-sm" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="top" style="text-transform: lowercase;" data-content="By providing a pre-approved amount, you're confirming that you are willing to pay the amount ticked, or less! This allows us to complete repairs as soon as they land with us. If our assessment shows that a repair will cost more than this pre-approved amount, we will then contact you and provide a quote before any work is carried out.">
                                     Why pre-approve?
                                 </button></div>
@@ -98,34 +103,7 @@
                                 </div>
                                 </div>
                             </div>
-                            
                         </div>
-                        
-                        <!--<div class="row">
-                            <div class="col-12 col-sm-6">
-                                <input type="text" name="" id="full_name"
-                                       placeholder="{{ .Site.Data.homepage.contact.form.full_name }}"/>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <input type="text" name="" id="email"
-                                       placeholder="{{ .Site.Data.homepage.contact.form.email }}"/>
-                            </div>
-                        </div>
-                        <div class="row pt-4">
-                            <div class="col-12">
-                                <textarea name="" id="message"
-                                          cols="30" rows="3" placeholder="{{ .Site.Data.homepage.contact.form.message }}"></textarea>
-                            </div>
-                        </div>
-                        <div class="row pt-4">
-                            <div class="col-12">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="{{ .Site.Data.homepage.contact.button.icon }}"></i>
-                                    {{ .Site.Data.homepage.contact.button.btnText }}
-                                </button>
-                            </div>
-                        </div>-->
-                    
                     </form>
                 </div>
                 <div class="col-12 contact__info">
