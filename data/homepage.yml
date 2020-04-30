@@ -207,23 +207,24 @@ testimonial:
 contact:
   enable: true
   title: "Contact"
+  info: "In order to book your device in, please fill out the form below. We'll generate a book in form to print off, simply put this inside the box with your device! Send your device to the address included on the book in form, you'll receive an update as soon as it arrives with us. "
   form:
     action: "#"
-    full_name: "Full Name"
+    full_name: "CDR"
     email: "Email Address"
     message: "Type Your Message Here"
   phone:
     title: "Phone Number"
-    number: "+41 (44) 505 10 99"
+    number: "01484 767660"
   email:
     title: "Email"
-    email: '<a href="mailto:team@radity.com">team@radity.com</a>'
+    email: '<a href="mailto:info@chiropodydrillrepairs.co.uk">info@chiropodydrillrepairs.co.uk</a>'
   address:
     title: "Address"
-    address: "Radity GmbH<br />Max-Bill-Platz 5, 8050 Zürich"
+    address: "CDR - C/O TAFS Products LTD, Unit 12 A-One Business Park, 370 Bradford Road, HD6 4DJ"
   button:
     icon: "icon-mail-fill"
-    btnText: "Send Message"
+    btnText: "Need more info?"
 
 # newsletter
 newsletter:

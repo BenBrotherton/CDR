@@ -3,104 +3,161 @@
     <div class="container">
         <div class="contact">
             <h2>{{ .Site.Data.homepage.contact.title }}</h2>
-            <div class="row">
-                <form name="book-in" class="" method="post" netlify>
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="form-row">
-                                <h3 class="text-center"> Your Details</h3>
-                            </div>
-                            <div class="form-row">
-                                <div class="col-5"><input placeholder="First Name" name="Firstname" id="first_name"
-                                        type="text" class="form-control" required /></div>
-                                <div class="col-5 ml-1"><input placeholder="Surname" name="Surname" id="surname" type="text"
-                                        class="form-control" required /></div>
-                            </div>
+            <p>{{ .Site.Data.homepage.contact.info }}</p>
 
-                            <div class="form-row">
-                                <textarea placeholder="Address" name="Address" id="customer_address" type="textarea"
-                                    class="form-control" required maxlength="260"></textarea>
-
+            <form name="book-in" class="" method="post" netlify>
+                <div class="row">
+                    <div class="col-sm-10 mx-auto">
+                        <div class="form-row">
+                            <h3 class="py-2">Your Details</h3>
+                        </div>
+                        <div class="form-row py-1">
+                            <div class="col-5">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">First Name</span>
+                                    </div>
+                                    <input name="Firstname" class="form-control" id="first_name" type="text" required>
+                                </div>
                             </div>
-                            <div class="form-row">
-                                <div class="col-5"><input placeholder="Phone Number" name="Phone Number"
-                                        id="phone_number" type="tel" class="form-control" required /></div>
-                                <div class="col-5 ml-1"><input placeholder="Email Address" Name="Email Address"
-                                        id="email_address" type="email" class="form-control" required /></div>
-
+                            <div class="col-5 mx-auto">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Surname</span>
+                                    </div>
+                                    <input name="Surname" class="form-control" id="surname" type="text"  required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row py-1">
+                            <div class="col-11">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Address</span>
+                                    </div>
+                                    <textarea name="Address" id="customer_address" type="textarea" class="form-control"
+                                        required maxlength="260"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row py-1">
+                            <div class="col-5">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Phone Number</span>
+                                    </div>
+                                    <input name="PhoneNumber" id="phone_number" type="tel" class="form-control"
+                                        required />
+                                </div>
+                            </div>
+                            <div class="col-5 mx-auto">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Email Address</span>
+                                    </div>
+                                    <input name="Email" id="email" type="email" class="form-control" required />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-10 mx-auto">
+                        <div class="form-row">
+                            <h3 class="text-center py-2"> Your Device </h3>
+                        </div>
+                        <div class="form-row py-1">
+                            <div class="col-5">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Device Make</span>
+                                    </div>
+                                    <input name="Devicemake" id="device_make" type="text" class="form-control"
+                                        required />
+                                </div>
+                            </div>
+                            <div class="col-5 mx-auto">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Device Model</span>
+                                    </div>
+                                    <input name="Devicemodel" id="device_model" type="text" class="form-control"
+                                        required />
+                                </div>
                             </div>
                         </div>
 
-                        <div class="col-6">
-                            <div class="form-row">
-                                <h3 class="text-center"> Your Device </h3>
+                        <div class="form-row py-1">
+                            <div class="col-5">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Device Type</span>
+                                    </div>
+                                    <select name="Device Type" id="device_type" class="form-control" size="1" required>
+                                        <option value="null" selected disabled hidden></option>
+                                        <option value="Battery">Battery Powered Drill</option>
+                                        <option value="Desk">Mains Powered Drill</option>
+                                        <option value="Handpiece">Handpiece Only</option>
+                                        <option value="Desk Lamp">Desk Lamp</option>
+                                        <option value="UV / LED Lamp">UV / LED Lamp</option>
+                                        <option value="Dust Collector">Dust Collector</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="form-row">
-                                <div class="col-5"><input placeholder="Device Make" name="Device Make" id="device_make"
-                                        type="text" class="form-control" required /></div>
-                                <div class="col-5 ml-1"><input placeholder="Device Model" name="Device Model"
-                                        id="device_model" type="text" class="form-control" required /></div>
-
-                            </div>
-
-                            <div class="form-row">
-                                <select placeholder="Device Type" name="Device Type" id="device_type"
-                                    class="form-control" size="1" required>
-                                    <option value="null" selected disabled hidden>Please Select A Device Type</option>
-                                    <option value="Battery">Battery Powered Drill</option>
-                                    <option value="Desk">Mains Powered Drill</option>
-                                    <option value="Handpiece">Handpiece Only</option>
-                                    <option value="Desk Lamp">Desk Lamp</option>
-                                    <option value="UV / LED Lamp">UV / LED Lamp</option>
-                                    <option value="Dust Collector">Dust Collector</option>
-                                    <option value="Other">Other</option>
-
-                                </select>
-                            </div>
-
-
-                            <div class="form-row">
+                            <div class="col-5 mx-auto">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Service required</span>
+                                    </div>
                                 <Select placeholder="Service Required" name="Service Required" id="service_req"
                                     class="form-control" size="1" required>
                                     <option value="" selected disabled hidden>Select an option</option>
                                     <option value="Service">Service</option>
                                     <option value="Repair">Repair</option>
                                 </Select>
-                            </div>
-
-                            <div class="form-row">
-                                <textarea placeholder="Fault description or comments" id="fault" name="Fault or Request"
-                                    type="textarea" class="form-control" maxlength="260" required></textarea>
-                            </div>
-
-                            <div class="form-row">
-                                <div class="col-4">Preapproved cost:</div>
-
-                                <div class="col-4">
-                                    <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="checkbox" id="40below" name="£40" class="custom-control-input" />
-                                        <label class="custom-control-label" for="40below">£40 or less</label>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="checkbox" id="80below" name="£80" class="custom-control-input" />
-                                        <label class="custom-control-label" for="80below">£80 or less</label>
-                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="form-row justify-content-md-center">
-                            <div class="row">
-                                <div class="col-md-auto">
-                                    <button class="btn btn-outline" type="submit">Print Your Label</button>
+
+                        <div class="form-row py-1">
+                            <div class="col-11">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Comments</span>
+                                    </div>
+                                    <textarea name="fault" id="fault" type="textarea" class="form-control"
+                                        required maxlength="400"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row py-1">
+                            <div class="col-4">Preapproved cost:</div>
+
+                            <div class="col-4">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="checkbox" id="40below" name="£40" class="custom-control-input" />
+                                    <label class="custom-control-label" for="40below">£40 or less</label>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="checkbox" id="80below" name="£80" class="custom-control-input" />
+                                    <label class="custom-control-label" for="80below">£80 or less</label>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </form>
-            </div>
-            <div class="col-12 contact__info">
+                </div>
+                <div class="row justify-content-md-center">
+                    <div class="col-12">
+                        <button class="btn btn-success" type="submit">Print Your Label</button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="row contact__info">
                 <h4>{{ .Site.Data.homepage.contact.phone.title }}</h4>
                 <span>{{ .Site.Data.homepage.contact.phone.number }}</span>
                 <h4>{{ .Site.Data.homepage.contact.email.title }}</h4>
