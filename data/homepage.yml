@@ -113,22 +113,22 @@ client_and_work:
     - logo:
         x: "img/clients/asgardia.png"
         _2x: "img/clients/asgardia@2x.png"
-      alt: "Asgardia"
+      alt: "Hadewe"
 
     - logo:
         x: "img/clients/earth-2.png"
         _2x: "img/clients/earth-2@2x.png"
-      alt: "Earth 2.0"
+      alt: "Saeyang"
 
     - logo:
         x: "img/clients/goldline.png"
         _2x: "img/clients/goldline@2x.png"
-      alt: "Goldline"
+      alt: "Kupa"
 
     - logo:
         x: "img/clients/kanba.png"
         _2x: "img/clients/kanba@2x.png"
-      alt: "Kanba"
+      alt: "Berchtold"
 
     - logo:
         x: "img/clients/zoo-tv.png"
@@ -146,7 +146,7 @@ client_and_work:
       price: "£30+V"
       button:
         icon: "icon-arrow-right"
-        btnText: "Case Study"
+        btnText: "Find out more"
         URL: "#"
       image:
         x: "img/works/radity-finance.jpg"
@@ -158,7 +158,7 @@ client_and_work:
       price: £75+V
       button:
         icon: "icon-arrow-right"
-        btnText: "Case Study"
+        btnText: "Find out more"
         URL: "#"
       image:
         x: "img/works/swissfintech.jpg"
@@ -170,7 +170,7 @@ client_and_work:
       price: "£100+V"
       button:
         icon: "icon-arrow-right"
-        btnText: "Case Study"
+        btnText: "Find out more"
         URL: "#"
       image:
         x: "img/works/robo-advisor.jpg"
@@ -207,7 +207,7 @@ testimonial:
 contact:
   enable: true
   title: "Contact"
-  info: "In order to book your device in, please fill out the form below. We'll generate a book in form to print off, simply put this inside the box with your device! Send your device to the address included on the book in form, you'll receive an update as soon as it arrives with us. "
+  info: "In order to book your device in, please fill out the form below. We'll generate a book in form for you to print off, simply put this inside the box with your device! Send your device to the address included on the book in form, you'll receive an update as soon as it arrives with us. "
   form:
     action: "#"
     full_name: "CDR"
