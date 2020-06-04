@@ -16,17 +16,9 @@
                             <div class="col-5">
                                 <div class="input-group">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text">First Name</span>
+                                        <span class="input-group-text">Name</span>
                                     </div>
-                                    <input name="Firstname" class="form-control" id="first_name" type="text" required>
-                                </div>
-                            </div>
-                            <div class="col-5 mx-auto">
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">Surname</span>
-                                    </div>
-                                    <input name="Surname" class="form-control" id="surname" type="text" required>
+                                    <input name="Name" class="form-control" id="name" type="text" required>
                                 </div>
                             </div>
                         </div>
@@ -171,7 +163,7 @@
                             </div>
 
                         </div>
-                        <div class="col-5 mx-auto float-right">
+                        <div class="col-5 mx-auto">
                             <div data-netlify-recaptcha="true"></div>
                             <button class="btn btn-success" type="submit">Print Your Label</button>
                         </div>
@@ -180,13 +172,13 @@
                 </div>
             </form>
 
-            <div class="row contact__info">
+            <div class="row contact__info py-2">
                 <h4>{{ .Site.Data.homepage.contact.phone.title }}</h4>
-                <span>{{ .Site.Data.homepage.contact.phone.number }}</span>
+                <p>{{ .Site.Data.homepage.contact.phone.number }}</p>
                 <h4>{{ .Site.Data.homepage.contact.email.title }}</h4>
-                <span>{{ .Site.Data.homepage.contact.email.email | safeHTML }}</span>
+                <p>{{ .Site.Data.homepage.contact.email.email | safeHTML }}</p>
                 <h4>{{ .Site.Data.homepage.contact.address.title }}</h4>
-                <span>{{ .Site.Data.homepage.contact.address.address | safeHTML }}</span>
+                <address>{{ .Site.Data.homepage.contact.address.address | safeHTML }}</address>
             </div>
         </div>
     </div>
