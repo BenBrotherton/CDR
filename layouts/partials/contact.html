@@ -21,6 +21,14 @@
                                     <input name="Name" class="form-control" id="name" type="text" required>
                                 </div>
                             </div>
+                            <div class="col-5 mx-auto">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Company</span>
+                                    </div>
+                                    <input name="Company" class="form-control" id="company" type="text">
+                                </div>
+                            </div>
                         </div>
                         <div class="form-row py-1">
                             <div class="col-11">
@@ -39,7 +47,15 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text">Postcode</span>
                                     </div>
-                                    <input name="Postcode" class="form-control" id="postcode" type="text" required>
+                                    <input name="Postcode" class="form-control" id="postcode" type="text" required />
+                                </div>
+                            </div>
+                            <div class="col-5 mx-auto">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Country</span>
+                                    </div>
+                                    <input name="Country" class="form-control" id="country" type="text" />
                                 </div>
                             </div>
                         </div>
@@ -67,7 +83,7 @@
                 <div class="row">
                     <div class="col-sm-10 mx-auto">
                         <div class="form-row">
-                            <h3 class="text-center py-2"> Your Device </h3>
+                            <h3 class="py-2"> Your Device </h3>
                         </div>
                         <div class="form-row py-1">
                             <div class="col-5">
@@ -111,14 +127,9 @@
                             <div class="col-5 mx-auto">
                                 <div class="input-group">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text">Service required</span>
+                                        <span class="input-group-text">Serial Number</span>
                                     </div>
-                                    <Select placeholder="Service Required" name="Service Required" id="service_req"
-                                        class="form-control" size="1" required>
-                                        <option value="" selected disabled hidden>Select an option</option>
-                                        <option value="Service">Service</option>
-                                        <option value="Repair">Repair</option>
-                                    </Select>
+                                    <input name="Serialnumber" id="serial_number" type="text" class="form-control" required />
                                 </div>
                             </div>
                         </div>
@@ -129,7 +140,7 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text">Comments</span>
                                     </div>
-                                    <textarea name="fault" id="fault" type="textarea" class="form-control" required
+                                    <textarea name="Comments" id="comments" type="textarea" class="form-control" required
                                         maxlength="400"></textarea>
                                 </div>
                             </div>
@@ -139,15 +150,24 @@
                             <div class="col-4">Preapproved cost:</div>
 
                             <div class="col-4">
-                                <div class="custom-control custom-radio custom-control-inline">
+                                <div class="custom-control custom-control-inline">
                                     <input type="checkbox" id="40below" name="£40" class="custom-control-input" />
                                     <label class="custom-control-label" for="40below">£40 or less</label>
                                 </div>
                             </div>
                             <div class="col-4">
-                                <div class="custom-control custom-radio custom-control-inline">
+                                <div class="custom-control custom-control-inline">
                                     <input type="checkbox" id="80below" name="£80" class="custom-control-input" />
                                     <label class="custom-control-label" for="80below">£80 or less</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row py-1">
+                            <div class="col-4">In warranty?</div>
+                            <div class="col-4">
+                                <div class="custom-control custom-control-inline">
+                                    <input type="checkbox" id="warranty" name="warranty" class="custom-control-input" />
+                                    <label class="custom-control-label" for="warranty"></label>
                                 </div>
                             </div>
                         </div>
