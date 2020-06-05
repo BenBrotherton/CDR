@@ -161,8 +161,8 @@ client_and_work:
         btnText: "Find out more"
         URL: "#"
       image:
-        x: "img/works/swissfintech.jpg"
-        _2x: "img/works/swissfintech@2x.jpg"
+        x: "img/suction.jpg"
+        _2x: "img/suction2x.jpg"
       is_even: false
 
     - title: "Spray Drill Servicing"
@@ -173,8 +173,8 @@ client_and_work:
         btnText: "Find out more"
         URL: "#"
       image:
-        x: "img/works/robo-advisor.jpg"
-        _2x: "img/works/robo-advisor@2x.jpg"
+        x: "spray.jpg"
+        _2x: "spray2x.jpg"
       is_even: true
 
 # testimonial
