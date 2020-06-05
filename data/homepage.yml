@@ -173,8 +173,8 @@ client_and_work:
         btnText: "Find out more"
         URL: "#"
       image:
-        x: "spray.jpg"
-        _2x: "spray2x.jpg"
+        x: "img/spray.jpg"
+        _2x: "img/spray2x.jpg"
       is_even: true
 
 # testimonial
