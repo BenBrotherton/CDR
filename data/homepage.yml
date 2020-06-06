@@ -3,7 +3,7 @@ showcase:
   enable: true
   title: "CDR"
   subtitle: "Chiropody Drill Repairs"
-  description: "We're a family run business with a long history in the Chiropody & Podiatry market. We have training direct from equipment manufacturers and fully qualified Electronic Engineers on staff, so we're the best bet for getting your drill back to full health. We have 100's of happy customers, and provide personal aftercare to make sure your equipment is working reliably and safely. "
+  description: "We're a family run business with a long history in the Chiropody & Podiatry market. We have training direct from equipment manufacturers and Electronic Engineers on staff, so we're the best bet for getting your drill back to full health. We have 100's of happy customers, and provide personal aftercare to make sure your equipment is working reliably and safely. "
   image:
     x: "img/showcase/showcase.png"
     _2x: "img/showcase/showcase@2x.png"
@@ -218,7 +218,7 @@ contact:
     number: "01484 767660"
   email:
     title: "Email"
-    email: '<a href="mailto:info@chiropodydrillrepairs.co.uk">info@chiropodydrillrepairs.co.uk</a>'
+    email: "info @ chiropodydrillrepairs.co.uk"
   address:
     title: "Address"
     address: "CDR - C/O TAFS Products LTD, Unit 12 A-One Business Park, 370 Bradford Road, HD6 4DJ"
