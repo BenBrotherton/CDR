@@ -13,38 +13,14 @@ showcase:
   button:
     icon: "icon-mail-fill"
     btnText: "Contact"
-    URL: "https://radity.com/en/contact/"
+    URL: "/#contact"
 
   socialLinks:
-    - icon: "linkedin"
-      URL: "https://www.linkedin.com/company/radity/"
-
-    - icon: "github"
-      URL: "https://github.com/radity"
-
     - icon: "twitter"
       URL: "https://twitter.com/radity"
 
-    - icon: "dribbble"
-      URL: "https://dribbble.com/radity"
-
-    - icon: "behance"
-      URL: "https://www.behance.net/radity-digital"
-
     - icon: "youtube"
       URL: "https://www.youtube.com/channel/UCojEc6SPO-W1_CoeHhK9-Zw"
-
-    - icon: "instagram"
-      URL: "https://www.instagram.com/teamradity/"
-
-    - icon: "facebook"
-      URL: "https://www.facebook.com/raditycom/"
-
-    - icon: "codepen"
-      URL: "#"
-
-    - icon: "yelp"
-      URL: "https://www.yelp.com/"
 
 # about
 about:
@@ -59,7 +35,7 @@ about:
   button:
     icon: "icon-smile-fill"
     btnText: "About Me"
-    URL: "https://www.linkedin.com/company/radity/"
+    URL: "#contact"
   image:
     x: "img/who-am-i/user-picture.png"
     _2x: "img/who-am-i/user-picture@2x.png"
@@ -143,7 +119,7 @@ client_and_work:
   works:
     - title: "Micromotor Servicing"
       description: "Our Micromotor service includes replacement of wear and tear parts, including bearings and brushes. Handpieces and units are given a deep clean, removing the dust and debris which builds up over regular use."
-      price: "£30+V"
+      price: "from £30+V"
       button:
         icon: "icon-arrow-right"
         btnText: "Find out more"
@@ -155,7 +131,7 @@ client_and_work:
 
     - title: "Suction Drill Servicing"
       description: "Suction drills servicing includes a clean down of both handpiece and unit, removing any dust build up. Wear and tear parts such as brushes, filters and bearings are replaced to ensure all is in good working order."
-      price: £75+V
+      price: "from £75+V"
       button:
         icon: "icon-arrow-right"
         btnText: "Find out more"
@@ -167,7 +143,7 @@ client_and_work:
 
     - title: "Spray Drill Servicing"
       description: "Spray drills can suffer from build up of scale on the internal water systems. Our service includes full disassembly and cleaning of all pumps and pressure systems to ensure clean and consistent spray."
-      price: "£100+V"
+      price: "from £100+V"
       button:
         icon: "icon-arrow-right"
         btnText: "Find out more"
@@ -176,6 +152,19 @@ client_and_work:
         x: "img/spray.jpg"
         _2x: "img/spray2x.jpg"
       is_even: true
+
+    - title: "E-Files and Beauty"
+      description: "We also have experience repairing many brands of E-File, Lamps and Dust Collectors. E-Files benefit from regular servicing, helping to keep motion smooth and vibration free."
+      price: "from £30+V"
+      button:
+        icon: "icon-arrow-right"
+        btnText: "Find out more"
+        URL: "#"
+      image:
+        x: "img/spray.jpg"
+        _2x: "img/spray2x.jpg"
+      is_even: false
+
 
 # testimonial
 testimonial:
@@ -206,10 +195,10 @@ testimonial:
 # contact
 contact:
   enable: true
-  title: "Contact"
+  title: "Book your device in"
   info: "In order to book your device in, please fill out the form below. We'll generate a book in form for you to print off, simply put this inside the box with your device! Send your device to the address included on the book in form, you'll receive an update as soon as it arrives with us. "
   form:
-    action: "#"
+    action: "html/book-in-success.html"
     full_name: "CDR"
     email: "Email Address"
     message: "Type Your Message Here"

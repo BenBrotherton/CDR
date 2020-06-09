@@ -1,0 +1,12 @@
+name = "CDR - Chiropody Drill Repairs"
+license = "MIT"
+licenselink = "https://github.com/radity/raditian-free-hugo-theme/blob/master/LICENSE"
+description = "CDR - Repairs and Maintenance for Podiatry & Beauty equipment"
+homepage = "www.drillrepairs.co.uk"
+tags = ['personal-website', 'personal', 'portfolio', 'single-page', 'one-page', 'fast', 'typography', 'customizable', 'mobile', 'resume', 'fresh', 'modern', 'flexbox', 'hugo-theme', 'hugo', 'bootstrap', 'responsive', 'clean', 'simple', 'creative', 'contact form', 'light', 'white', 'custom-design', 'minimal', 'minimalistic', 'minimalist', 'portfolio', 'google tag manager', 'google analytics', 'customizable', 'flexbox', 'starter', 'theme']
+features = ['responsive', 'bootstrap']
+min_version = "0.59.0"
+
+[author]
+  name = "Ben Brotherton"
+  homepage = "https://benjaminbrotherton.com"

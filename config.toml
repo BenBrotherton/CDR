@@ -28,14 +28,14 @@ weight = 1
 [params]
 googleTagManagerID = "GTM-000000"
 [params.footer]
-copyright = "© Raditian. All rights reserved."
+copyright = "© CDR - ChiropodDrillRepairs. All rights reserved. CDR (ChiropodDrillRepairs) is a subsidiary of TAFS Products LTD"
 [params.footer.radity_logo]
 _2x = "img/general/design-and-code-radity@2x.png"
 alt = "Design & Code - Radity"
 x = "img/general/design-and-code-radity.png"
 [params.logo]
-text1 = "Andreas"
-text2 = "Ellure"
+text1 = "CDR"
+text2 = "ChiropodyDrillRepairs"
 [[params.plugins.css]]
 URL = "css/main.css"
 [[params.plugins.css]]
