@@ -6,7 +6,7 @@
             <p>{{ .Site.Data.homepage.contact.info }}</p>
 
             <form name="book-in" class="" method="post" netlify netlify-honeypot="bot-field"
-                data-netlify-recaptcha="true" action="/html/book-in-success.html"> 
+                data-netlify-recaptcha="true" action="/html/book-in-success.html">
                 <div class="row">
                     <div class="col-sm-10 mx-auto">
                         <div class="form-row">
@@ -129,8 +129,13 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text">Serial Number</span>
                                     </div>
-                                    <input name="Serialnumber" id="serial_number" type="text" class="form-control" required />
+                                    <input name="Serialnumber" id="serial_number" type="text" class="form-control"
+                                        required />
                                 </div>
+                                <small id="serialHelpBlock" class="form-text text-muted">
+                                    We require a serial number for all repairs, if you can't find one please just use
+                                    your surname and the model of the drill I.E SmithK38.
+                                </small>
                             </div>
                         </div>
 
@@ -140,33 +145,46 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text">Comments</span>
                                     </div>
-                                    <textarea name="Comments" id="comments" type="textarea" class="form-control" required
-                                        maxlength="400"></textarea>
+                                    <textarea name="Comments" id="comments" type="textarea" class="form-control"
+                                        required maxlength="400"></textarea>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="form-row py-1">
-                            <div class="col-4">Preapproved cost:</div>
-
-                            <div class="col-4">
-                                <div class="custom-control custom-control-inline">
-                                    <input type="checkbox" id="80below" name="£80" class="custom-control-input" />
-                                    <label class="custom-control-label" for="80below">£80 or less</label>
+                        <div class="form-row py-2">
+                            <div class="col-11">
+                                <small id="PreapprovalHelpBlock" class="form-text text-muted">
+                                    By preapproving a maximum price it allows us to get to work straight away. If we
+                                    take a look at your device and expect the bill to be more we shall get in touch to
+                                    give you a new estimate so you can decide whether you'd like to go ahead. </small>
+                                <div class="row py-2">
+                                    <div class="col-4">Preapproved cost:</div>
+                                    <div class="col-3">
+                                        <div class="custom-control custom-control-inline">
+                                            <input type="checkbox" id="80below" name="£80"
+                                                class="custom-control-input" />
+                                            <label class="custom-control-label" for="80below">£80 or less</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="custom-control custom-control-inline">
+                                            <input type="checkbox" id="120below" name="£120"
+                                                class="custom-control-input" />
+                                            <label class="custom-control-label" for="120below">£120 or less</label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-4">
-                                <div class="custom-control custom-control-inline">
-                                    <input type="checkbox" id="120below" name="£120" class="custom-control-input" />
-                                    <label class="custom-control-label" for="120below">£120 or less</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row mt-2">
-                        <p>
-                            Do you believe this device should still be covered by warranty? Please include proof of purchase with your repair. Not all repairs in the warranty period are covered - user error or poor maintenance are not faults covered by warranty.</p>
                         </div>
                         <div class="form-row">
+                            <div class="col-11">
+                                <small class="form-text text-muted">
+                                    Do you believe this device should still be covered by warranty? If so please include proof
+                                    of purchase with your repair. Not all repairs in the warranty period are covered - faults caused by user
+                                    error or through poor or incorrect maintenance are not faults covered by warranty.</small>
+                            </div>
+                        </div>
+                        <div class="form-row py-2">
                             <div class="col-4">In warranty?
                             </div>
                             <div class="col-4">
@@ -183,53 +201,65 @@
                 </div>
                 <div class="row py-1">
                     <div class="col-sm-10 mx-auto">
+                        
                         <div class="form-row">
-                        <div class="col-5">
+                            <div class="col-sm-5 mx-auto">
                             <div class="form-group">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck"
+                                        required/>
                                     <label class="form-check-label" for="invalidCheck">
-                                        By using our service you consent to our <a href=terms.html>terms and conditions.</a>
+                                            By using our service you consent to our <a href=/html/terms.html>terms and
+                                                conditions.</a>
                                     </label>
                                     <div class="invalid-feedback">
                                         You must agree before submitting.
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-                        <div class="col-5 mx-auto">
+                        </div>
+                    
+                        <div class="form-row">
+                            <div class="col-sm-5 mx-auto d-flex justify-content-center">
                             <div data-netlify-recaptcha="true"></div>
                             <button class="btn btn-success" type="submit">Print Your Label</button>
                         </div>
-                    </div>
-                    </div>
+                        </div>
+                    </div>     
                 </div>
             </form>
-            
 
-  
+
+
             <h2 class="py-2">Get in touch</h2>
             <p>
-                Feel free to get in touch using the channels below. However we do not book in repairs over the phone, please use the form above.</p>
+                Feel free to get in touch using the channels below. However we do not book in repairs over the phone or via email,
+                please use the form above.</p>
             </p>
-        
+
             <div class="row">
-                    <div class="col-5">
-                        <h4>{{ .Site.Data.homepage.contact.phone.title }}</h4>
-                        <p>{{ .Site.Data.homepage.contact.phone.number }}</p>
-                        <h4>{{ .Site.Data.homepage.contact.email.title }}</h4>
-                        <p><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#99;&#104;&#105;&#114;&#111;&#112;&#111;&#100;&#121;&#100;&#114;&#105;&#108;&#108;&#114;&#101;&#112;&#97;&#105;&#114;&#115;&#46;&#99;&#111;&#46;&#117;&#107;">&#105;&#110;&#102;&#111;&#64;&#99;&#104;&#105;&#114;&#111;&#112;&#111;&#100;&#121;&#100;&#114;&#105;&#108;&#108;&#114;&#101;&#112;&#97;&#105;&#114;&#115;&#46;&#99;&#111;&#46;&#117;&#107;</a></p> 
-                    </div>
-                    <div class="col-5 mx-auto">
-                        <h4>{{ .Site.Data.homepage.contact.address.title }}</h4>
-                        <address>{{ .Site.Data.homepage.contact.address.address | safeHTML }}</address>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d435.42085068571595!2d-1.7776560485708741!3d53.7190522069931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bdde7ae3b09eb%3A0xb6d75a0adc76f361!2sTAFS%20Products%20Ltd!5e0!3m2!1sen!2suk!4v1591475502036!5m2!1sen!2suk" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                    </div>   
+                <div class="col-5">
+                    <h4>{{ .Site.Data.homepage.contact.phone.title }}</h4>
+                    <p>{{ .Site.Data.homepage.contact.phone.number }}</p>
+                    <h4>{{ .Site.Data.homepage.contact.email.title }}</h4>
+                    <p><a
+                            href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#99;&#104;&#105;&#114;&#111;&#112;&#111;&#100;&#121;&#100;&#114;&#105;&#108;&#108;&#114;&#101;&#112;&#97;&#105;&#114;&#115;&#46;&#99;&#111;&#46;&#117;&#107;">&#105;&#110;&#102;&#111;&#64;&#99;&#104;&#105;&#114;&#111;&#112;&#111;&#100;&#121;&#100;&#114;&#105;&#108;&#108;&#114;&#101;&#112;&#97;&#105;&#114;&#115;&#46;&#99;&#111;&#46;&#117;&#107;</a>
+                    </p>
+                </div>
+                <div class="col-5 mx-auto">
+                    <h4>{{ .Site.Data.homepage.contact.address.title }}</h4>
+                    <address>{{ .Site.Data.homepage.contact.address.address | safeHTML }}</address>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d435.42085068571595!2d-1.7776560485708741!3d53.7190522069931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bdde7ae3b09eb%3A0xb6d75a0adc76f361!2sTAFS%20Products%20Ltd!5e0!3m2!1sen!2suk!4v1591475502036!5m2!1sen!2suk"
+                        width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
             </div>
         </div>
-        </div>
-        
+    </div>
+
     </div>
 </section>
 {{ end }}

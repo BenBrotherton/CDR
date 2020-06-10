@@ -1,8 +1,8 @@
 # showcase
 showcase:
   enable: true
-  title: "CDR"
-  subtitle: "Chiropody Drill Repairs"
+  title: ""
+  subtitle: "Drill and E-File Repairs and Servicing"
   description: "We're a family run business with a long history in the Chiropody & Podiatry market. We have training direct from equipment manufacturers and Electronic Engineers on staff, so we're the best bet for getting your drill back to full health. We have 100's of happy customers, and provide personal aftercare to make sure your equipment is working reliably and safely. "
   image:
     x: "img/showcase/showcase.png"
@@ -196,7 +196,7 @@ testimonial:
 contact:
   enable: true
   title: "Book your device in"
-  info: "In order to book your device in, please fill out the form below. We'll generate a book in form for you to print off, simply put this inside the box with your device! Send your device to the address included on the book in form, you'll receive an update as soon as it arrives with us. "
+  info: "In order to book your device in, please fill out the form below. We'll then email a book in form for you to print off, simply put this inside the box with your device and send if off to the address found at the bottom of the book in form, you'll receive an update as soon as it arrives with us. "
   form:
     action: "html/book-in-success.html"
     full_name: "CDR"
