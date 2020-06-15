@@ -5,10 +5,10 @@ showcase:
   subtitle: "Drill and E-File Repairs and Servicing"
   description: "We're a family run business with a long history in the Chiropody & Podiatry market. We have training direct from equipment manufacturers and Electronic Engineers on staff, so we're the best bet for getting your drill back to full health. We have 100's of happy customers, and provide personal aftercare to make sure your equipment is working reliably and safely. "
   image:
-    x: "img/showcase/showcase.png"
-    _2x: "img/showcase/showcase@2x.png"
+    x: "img/showcase.png"
+    _2x: "img/showcase@2x.png"
   imageMobile:
-    x: "img/showcase/showcase-mobile.jpg"
+    x: "img/showcase-mobile.jpg"
 
   button:
     icon: "icon-mail-fill"
@@ -125,8 +125,8 @@ client_and_work:
         btnText: "Find out more"
         URL: "#"
       image:
-        x: "img/works/radity-finance.jpg"
-        _2x: "img/works/radity-finance@2x.jpg"
+        x: "img/micromotor.png"
+        _2x: "img/micromotor@2x.png"
       is_even: true
 
     - title: "Suction Drill Servicing"
@@ -137,8 +137,8 @@ client_and_work:
         btnText: "Find out more"
         URL: "#"
       image:
-        x: "img/suction.jpg"
-        _2x: "img/suction2x.jpg"
+        x: "img/suction.png"
+        _2x: "img/suction2x.png"
       is_even: false
 
     - title: "Spray Drill Servicing"
@@ -149,8 +149,8 @@ client_and_work:
         btnText: "Find out more"
         URL: "#"
       image:
-        x: "img/spray.jpg"
-        _2x: "img/spray2x.jpg"
+        x: "img/spray.png"
+        _2x: "img/spray@2x.png"
       is_even: true
 
     - title: "E-Files and Beauty"
