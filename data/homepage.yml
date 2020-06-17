@@ -196,7 +196,7 @@ testimonial:
 contact:
   enable: true
   title: "Book your device in"
-  info: "In order to book your device in, please fill out the form below. We'll then email a book in form for you to print off, simply put this inside the box with your device and send if off to the address found at the bottom of the book in form, you'll receive an update as soon as it arrives with us. "
+  info: "In order to book your device in, please fill out the form below. We'll then email a book in form for you to print off, simply put this inside the box with your device and send if off to the address found at the bottom of the book in form, you'll receive an update as soon as it arrives with us. This is not a contact form, please only use this form to book your device in with us."
   form:
     action: "html/book-in-success.html"
     full_name: "CDR"
