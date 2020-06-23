@@ -15,12 +15,6 @@ showcase:
     btnText: "Contact"
     URL: "/#contact"
 
-  socialLinks:
-    - icon: "twitter"
-      URL: "https://twitter.com/radity"
-
-    - icon: "youtube"
-      URL: "https://www.youtube.com/channel/UCojEc6SPO-W1_CoeHhK9-Zw"
 
 # about
 about:
@@ -161,8 +155,8 @@ client_and_work:
         btnText: "Find out more"
         URL: "#"
       image:
-        x: "img/spray.jpg"
-        _2x: "img/spray2x.jpg"
+        x: "img/beauty.png"
+        _2x: "img/beauty@2x.png"
       is_even: false
 
 
