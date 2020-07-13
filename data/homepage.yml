@@ -81,34 +81,24 @@ client_and_work:
 
   clients:
     - logo:
-        x: "img/clients/asgardia.png"
-        _2x: "img/clients/asgardia@2x.png"
+        x: "img/clients/logo-hadewe-small.png"
+        _2x: "img/clients/logo-hadewe.png"
       alt: "Hadewe"
 
     - logo:
-        x: "img/clients/earth-2.png"
-        _2x: "img/clients/earth-2@2x.png"
+        x: "img/clients/logo-saeyang-small.png"
+        _2x: "img/clients/logo-saeyang.png"
       alt: "Saeyang"
 
     - logo:
-        x: "img/clients/goldline.png"
-        _2x: "img/clients/goldline@2x.png"
+        x: "img/clients/logo-kupa-small.png"
+        _2x: "img/clients/logo-kupa.png"
       alt: "Kupa"
 
     - logo:
-        x: "img/clients/kanba.png"
-        _2x: "img/clients/kanba@2x.png"
+        x: "img/clients/logo-berchtold-small.jpg"
+        _2x: "img/clients/logo-berchtold.jpg"
       alt: "Berchtold"
-
-    - logo:
-        x: "img/clients/zoo-tv.png"
-        _2x: "img/clients/zoo-tv@2x.png"
-      alt: "Zoo"
-
-    - logo:
-        x: "img/clients/ztos.png"
-        _2x: "img/clients/ztos@2x.png"
-      alt: "Ztos"
 
   works:
     - title: "Micromotor Servicing"
