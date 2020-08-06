@@ -3,7 +3,7 @@ languageCode = "en-us"
 theme = "raditian-free-hugo-theme"
 [[menu.footer]]
 URL = "#contact"
-name = "Contact"
+name = "Book In"
 weight = 3
 [[menu.footer]]
 URL = "#portfolio"
@@ -15,7 +15,7 @@ name = "About"
 weight = 1
 [[menu.header]]
 URL = "#contact"
-name = "Contact"
+name = "Book In"
 weight = 3
 [[menu.header]]
 URL = "#portfolio"
