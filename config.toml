@@ -6,7 +6,7 @@ URL = "#contact"
 name = "Book In"
 weight = 3
 [[menu.footer]]
-URL = "#portfolio"
+URL = "#pricing"
 name = "Pricing"
 weight = 2
 [[menu.footer]]
@@ -18,7 +18,7 @@ URL = "#contact"
 name = "Book In"
 weight = 3
 [[menu.header]]
-URL = "#portfolio"
+URL = "#pricing"
 name = "Pricing"
 weight = 2
 [[menu.header]]
