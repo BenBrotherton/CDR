@@ -86,16 +86,6 @@ client_and_work:
         _2x: "img/clients/logo-saeyang.png"
       alt: "Saeyang"
 
-    - logo:
-        x: "img/clients/logo-kupa-small.png"
-        _2x: "img/clients/logo-kupa.png"
-      alt: "Kupa"
-
-    - logo:
-        x: "img/clients/logo-berchtold-small.jpg"
-        _2x: "img/clients/logo-berchtold.jpg"
-      alt: "Berchtold"
-
   works:
     - title: "Micromotor Servicing"
       description: "Our Micromotor service includes replacement of wear and tear parts, including bearings and brushes. Handpieces and units are given a deep clean, removing the dust and debris which builds up over regular use."
