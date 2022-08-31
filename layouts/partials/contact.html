@@ -1,13 +1,13 @@
 {{ if .Site.Data.homepage.contact.enable }}
-<!--
+
 <section id="contact" class="section section--contact pt-0">
     <div class="container">
         <div class="contact">
             <h2 class="text-center">{{ .Site.Data.homepage.contact.title }}</h2>
             <p>{{ .Site.Data.homepage.contact.info }}</p>
 
-            <form name="repair-book-in" class="" method="post" netlify netlify-honeypot="bot-field"
-                data-netlify-recaptcha="true" action="/html/book-in-success.html">
+            <form name="repair-book-in-form" method="POST" netlify netlify-honeypot="bot-field" data-netlify-recaptcha="true"
+                action="/html/book-in-success.html">
 
                 <div class="row">
 
@@ -188,14 +188,16 @@
                         <div class="form-row py-2">
                             <div class="col-sm-11">
                                 <small id="PostageBlock" class="form-text text-muted">
-                                    Please select the return postage service you would prefer. For all devices over 1.5KG DPD will be used. </small>
+                                    Please select the return postage service you would prefer. For all devices over
+                                    1.5KG DPD will be used. </small>
                                 <div class="col-sm-11" id="PostageCost"></div>
                                 <div class="col-sm-11"></div>
                                 <div class="row py-2">
                                     <div class="col-sm-4">Postage cost:</div>
                                     <div class="col-sm-3">
                                         <div class="custom-control custom-control-inline">
-                                            <input type="checkbox" id="rm" name="Royal Mail" class="custom-control-input" />
+                                            <input type="checkbox" id="rm" name="Royal Mail"
+                                                class="custom-control-input" />
                                             <label class="custom-control-label" for="rm">Royal Mail £2.95</label>
                                         </div>
                                     </div>
@@ -263,10 +265,8 @@
                         <button class="btn btn-success" type="submit">Print Your Label</button>
                     </div>
                 </div>
+            </form>
         </div>
-        </form>
--->
-
         <div class="row">
             <div class="col-sm-10 mx-auto">
                 <h2 class="py-2">Get in touch</h2>
@@ -281,7 +281,8 @@
                         <h4>{{ .Site.Data.homepage.contact.phone.title }}</h4>
                         <p>{{ .Site.Data.homepage.contact.phone.number }}</p>
                         <h4>{{ .Site.Data.homepage.contact.email.title }}</h4>
-                        <p><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#99;&#104;&#105;&#114;&#111;&#112;&#111;&#100;&#121;&#100;&#114;&#105;&#108;&#108;&#114;&#101;&#112;&#97;&#105;&#114;&#115;&#46;&#99;&#111;&#46;&#117;&#107;">&#105;&#110;&#102;&#111;&#64;&#99;&#104;&#105;&#114;&#111;&#112;&#111;&#100;&#121;&#100;&#114;&#105;&#108;&#108;&#114;&#101;&#112;&#97;&#105;&#114;&#115;&#46;&#99;&#111;&#46;&#117;&#107;</a>
+                        <p><a
+                                href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#99;&#104;&#105;&#114;&#111;&#112;&#111;&#100;&#121;&#100;&#114;&#105;&#108;&#108;&#114;&#101;&#112;&#97;&#105;&#114;&#115;&#46;&#99;&#111;&#46;&#117;&#107;">&#105;&#110;&#102;&#111;&#64;&#99;&#104;&#105;&#114;&#111;&#112;&#111;&#100;&#121;&#100;&#114;&#105;&#108;&#108;&#114;&#101;&#112;&#97;&#105;&#114;&#115;&#46;&#99;&#111;&#46;&#117;&#107;</a>
                         </p>
                     </div>
                     <div class="col-sm-5 mx-auto">
@@ -296,8 +297,6 @@
                 </div>
             </div>
         </div>
-    </div>
-
     </div>
 </section>
 {{ end }}
