@@ -2,12 +2,12 @@ baseURL = ""
 languageCode = "en-us"
 theme = "raditian-free-hugo-theme"
 [[menu.footer]]
-URL = "#contact"
-name = "Book In"
+URL = "html/terms.html"
+name = "Terms & Conditions"
 weight = 3
 [[menu.footer]]
-URL = "#pricing"
-name = "Pricing"
+URL = "html/privacypolicy.html"
+name = "Privacy Policy"
 weight = 2
 [[menu.footer]]
 URL = "#about"
