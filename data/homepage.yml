@@ -89,7 +89,7 @@ client_and_work:
   works:
     - title: "Micromotor Servicing"
       description: "Our Micromotor service includes replacement of wear and tear parts, including bearings and brushes. Handpieces and units are given a deep clean, removing the dust and debris which builds up over regular use."
-      price: "from £30+V"
+      price: "from £40+V"
       button:
         icon: "icon-arrow-right"
         btnText: "More details"
@@ -101,7 +101,7 @@ client_and_work:
 
     - title: "Suction Drill Servicing"
       description: "Suction drills servicing includes a clean down of both handpiece and unit, removing any dust build up. Wear and tear parts such as brushes, filters and bearings are replaced to ensure all is in good working order."
-      price: "from £75+V"
+      price: "from £100+V"
       button:
         icon: "icon-arrow-right"
         btnText: "More details"
@@ -113,7 +113,7 @@ client_and_work:
 
     - title: "Spray Drill Servicing"
       description: "Spray drills can suffer from build up of scale on the internal water systems. Our service includes full disassembly and cleaning of all pumps and pressure systems to ensure clean and consistent spray."
-      price: "from £100+V"
+      price: "from £125+V"
       button:
         icon: "icon-arrow-right"
         btnText: "More details"
@@ -125,7 +125,7 @@ client_and_work:
 
     - title: "E-Files and Beauty"
       description: "We also have experience repairing many brands of E-File, Lamps and Dust Collectors. E-Files benefit from regular servicing, helping to keep motion smooth and vibration free."
-      price: "from £30+V"
+      price: "from £40+V"
       button:
         icon: "icon-arrow-right"
         btnText: "More details"
