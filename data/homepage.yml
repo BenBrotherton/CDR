@@ -143,7 +143,7 @@ testimonial:
 
 # contact
 contact:
-  enable: true
+  enable: false
   title: "Book your device in"
   info: "In order to book your device in, please fill out the form below. You will recieve an email with a completed form to print off, simply put this inside the box with your device and send if off to the address found at the bottom of the printout. You'll receive an email update as soon as it arrives with us. This is not a contact form, please only use this form to book your device in with us."
   form:
