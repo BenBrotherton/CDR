@@ -168,7 +168,3 @@ contact:
 newsletter:
   enable: false
   title: "Limited Time Offer"
-
-# promotion
-promotion:
-  enable: false
