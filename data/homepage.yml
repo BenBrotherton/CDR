@@ -167,7 +167,8 @@ contact:
 # newsletter
 newsletter:
   enable: false
-  title: "Newsletter subscription"
-  success_message: "Successfully subscribed"
-  error_message: "Error while subscribing."
-  note: "We'll never share your email with anyone else."
+  title: "Limited Time Offer"
+
+# promotion
+promotion:
+  enable: false
