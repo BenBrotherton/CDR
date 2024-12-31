@@ -21,15 +21,24 @@
                             </div>
                         </div>
                         <div class="form-row py-1">
-                            <div class="col-sm-5">
+                            <div class="col-sm-3">
                                 <div class="input-group">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text">Name *</span>
+                                        <span class="input-group-text">First Name *</span>
                                     </div>
                                     <input name="Name" class="form-control" id="name" type="text" required>
                                 </div>
                             </div>
-                            <div class="col-sm-5 mx-auto">
+                            <div class="form-row py-1">
+                                <div class="col-sm-3">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Surname Name *</span>
+                                        </div>
+                                        <input name="Surname" class="form-control" id="surname" type="text" required>
+                                    </div>
+                                </div>
+                            <div class="col-sm-3 mx-auto">
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text">Company</span>
@@ -42,10 +51,28 @@
                             <div class="col-sm-11">
                                 <div class="input-group">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text">Address *</span>
+                                        <span class="input-group-text">Address Line 1 *</span>
                                     </div>
                                     <textarea name="Address" id="customer_address" type="textarea" class="form-control"
                                         required maxlength="260"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row py-1">
+                            <div class="col-sm-5">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Address Line 2</span>
+                                    </div>
+                                    <input name="Address2" class="form-control" id="customer_address_2" type="text" required />
+                                </div>
+                            </div>
+                            <div class="col-sm-5 mx-auto">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Town/City</span>
+                                    </div>
+                                    <input name="City" class="form-control" id="city" type="text" />
                                 </div>
                             </div>
                         </div>
@@ -148,6 +175,7 @@
 
                         <div class="form-row py-1">
                             <div class="col-sm-11">
+                                <p>Please provide as many details of the fault/issues you are experiencing with your device. The more we know, the quicker we can be when solving a problem!</p>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text">Comments</span>
